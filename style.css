@@ -192,3 +192,76 @@ footer a:link, footer a:visited {
 	width: 148px; 
 	height: 110px;
 	}
+
+
+	/* Samuel CSS */
+	.intro {
+		top: 0;
+		position: relative;
+	  }
+	  .intro header {
+		position: relative;
+		font-size: 30px;
+		line-height: 10px;
+		padding-top: 30px;
+		padding-bottom: 40px;
+		color: aqua;
+		background-image: url("");
+		background-size: 100%;
+		background-position-y: -200px;
+		text-align: center;
+	  }
+	  .intro header h1, .intro header h2 {
+		margin-left: 30px;
+	  }
+	  .intro .summary {
+		position: absolute;
+		color: aqua;
+		top: 135px;
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
+		text-align: center;
+		text-decoration: none;
+	  }
+	  .intro .summary p:nth-child(2) {
+		margin-top: -13px;
+	  }
+	  .intro .summary a {
+		padding: 2px 10px;
+	  }
+	  .intro a, .intro .preamble h3 {
+		background-color: goldenrod;
+		text-decoration: none;
+		border-radius: 15px;
+		padding: 5px 10px;
+		color: #fff;
+	  }
+	  .intro .preamble {
+		position: relative;
+		margin-left: 20px;
+		text-align: justify;
+	  }
+	  .intro .preamble p {
+		line-height: 15px;
+	  }
+	  .intro .preamble h3 {
+		max-width: 230px;
+	  }
+	  
+	  .page-wrapper {
+		height: 100vh;
+		display: grid;
+		grid-template: auto;
+		grid-template-areas: "header header header header" "main main main aside" "main main main aside";
+	  }
+	  .page-wrapper .intro {
+		grid-area: header;
+		width: 100%;
+	  }
+	  .page-wrapper #zen-supporting {
+		grid-area: main;
+	  }
+	  .page-wrapper .sidebar {
+		grid-area: aside;
+	  }
