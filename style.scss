@@ -1,9 +1,10 @@
 body{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    min-height: 100vh;
+    height: 100vh;
     background-color: rgb(8, 29, 29);
     color: #fff;
+    // font-size: calc(10px + 0.390625vw);
 }
 
 a{
@@ -31,14 +32,14 @@ li{
 
     header{
         position: relative;
-        font-size: 30px;
+        font-size: 3vw;
         line-height: 10px;
-        padding-top: 30px;
+        padding-top: 10px;
         padding-bottom: 40px;
         color: aqua;
         background-image: url("images/4.jpg");
         background-size: 100%;  
-        background-position-y: -200px;
+        background-position-y: -100px;
         text-align: center;
         h1, h2{
             margin-left: 30px;
@@ -107,9 +108,25 @@ li{
 
         footer{
             position: absolute;
-            margin-left: 0;
-            margin-right: 0;
-            text-align: center;
+            color: red;
+            display: flex;
+            width: 100%;
+            left: 0;
+            right: 0;
+            justify-content: center;
+            gap: 5%;
+
+            a{
+                margin: 10px 0;
+                background-color:#fff;
+                color: rgb(8, 29, 29);
+                width: 7%;
+                padding: 7px 0px;
+                border-radius: 30px;
+                font-weight: 700;
+                text-align: center;
+
+            }
         }
     }
     .sidebar{
@@ -118,8 +135,12 @@ li{
         max-width: 30vw;
         margin-right: 20px;
      }
+
     
 }
+
+
+
 
 @media screen and (max-width:1150px) {
     
@@ -148,13 +169,22 @@ li{
         }
 
         #zen-supporting{
-            max-width: 100vh;
+            max-width: 100vw;
+
+            footer {
+                gap: 3%;
+                
+                a{
+                    padding: 10px 20px;
+                }
+            }
         }
     
         .sidebar{
             position: absolute;
             right: 0;
             max-width: 100vw;
+            height: 100vh;
             padding: 30px 30px 0 5px;
             color: #ff216d;
 
@@ -202,7 +232,7 @@ li{
 
                 &.active{
                     background-color: #fff;
-                    height: 100vh;
+                    height: 100%;
                     margin-top: 0;
                     margin-right:0;
                     
@@ -247,4 +277,11 @@ li{
 
     }
 
+}
+
+@media screen and (max-width: 530px) {
+    .intro .summary{
+        top: 70px;
+        left: 30px;
+    }
 }
